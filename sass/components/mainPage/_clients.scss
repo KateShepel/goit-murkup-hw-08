@@ -1,0 +1,41 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__titel {
+    color: var(--title-text-color);
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    // padding-bottom: 94px;
+  }
+
+  &__item {
+    padding: 16px 32px 16px 32px;
+    width: 170px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      transition: solid var(--animation);
+    }
+  }
+
+  &__logo {
+    fill: var(--border-color);
+
+    .clients__item:hover &,
+    .clients__item:focus & {
+      fill: var(--accent-color);
+      transition: fill var(--animation);
+    }
+  }
+}

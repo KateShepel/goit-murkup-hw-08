@@ -1,0 +1,21 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 450px;
+  max-height: 100vh;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 581px;
+  }
+
+  background-color: var(--primary-white-color);
+
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}

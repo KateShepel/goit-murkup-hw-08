@@ -1,0 +1,51 @@
+.webs {
+  outline: 1px solid red;
+  display: flex;
+  height: 44px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    outline: 1px solid blue;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      transition: background-color var(--animation);
+    }
+  }
+}
+
+/* .webs__item {
+  display: block;
+  outline: 1px solid red;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+} */
+
+/* .webs .icon-instagram::before {
+  background-image: url(../imagescss/instagramwhite.svg);
+} */
+
+/* .webs .icon-twiter::before {
+  background-image: url(../imagescss/twitterwhite.svg);
+}
+
+.webs .icon-facebook::before {
+  background-image: url(../imagescss/facebookwhite.svg);
+}
+
+.webs .icon-linkedin::before {
+  background-image: url(../imagescss/linkedinwhite.svg);
+} */

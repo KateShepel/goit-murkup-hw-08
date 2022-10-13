@@ -1,0 +1,55 @@
+.nav {
+  // display: flex;
+  // align-items: center;
+
+  &__list {
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__item {
+    // margin-right: 50px;
+    margin-bottom: 32px;
+    display: block;
+    // padding-top: 32px;
+
+    &:last-child {
+      // margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: var(--title-text-color);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      transition: color var(--animation);
+    }
+
+    .nav__item:hover & {
+      color: var(--accent-color);
+      transition: color var(--animation);
+    }
+  }
+}
+
+/* Или два кортких варианта для очистки крайних марджинов последних елементов
+Делается обязательно!!! */
+
+/* .nav__item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+/* .nav__item + .item {
+  margin-left: 50px;
+} */

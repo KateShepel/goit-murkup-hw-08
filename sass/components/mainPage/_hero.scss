@@ -1,0 +1,32 @@
+.hero {
+  background-color: var(--bg-dark-color);
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  /* max-width: 1600px; */
+  height: 400px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bcgpicturenew.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  outline: 2px solid tomato;
+
+  &__title {
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.58;
+
+    padding-top: 118px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin-bottom: 118px;
+  }
+}

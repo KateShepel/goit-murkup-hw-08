@@ -1,0 +1,32 @@
+.footer {
+  background-color: var(--bg-dark-color);
+
+  // & .container {
+  //   // display: flex;
+  // }
+
+  &__logo {
+    color: var(--primary-white-color);
+
+    display: inline-block;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  &__webs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    // padding-left: 72px;
+    outline: 1px solid red;
+  }
+
+  &__titel {
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+}

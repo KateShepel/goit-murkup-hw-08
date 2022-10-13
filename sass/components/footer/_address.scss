@@ -1,0 +1,21 @@
+.guide {
+  outline: 1px solid red;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+
+  &__address {
+    color: var(--primary-white-color);
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    display: block;
+    margin-top: 8px;
+  }
+}
