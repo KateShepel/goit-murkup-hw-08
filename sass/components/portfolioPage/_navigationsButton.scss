@@ -1,0 +1,62 @@
+.buttons {
+  color: var(--title-text-color);
+  // background-color: var(--bg-light-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  & .container {
+    // padding-top: 94px;
+    // padding-bottom: 50px;
+    @media screen and (max-width: 767px) {
+      padding-top: 66px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: start;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__nav {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
+    text-align: center;
+
+    border: 1px solid var(--bg-light-color);
+
+    &:hover,
+    &:focus {
+      color: var(--primary-white-color);
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+      transition: color var(--animation), background-color var(--animation),
+        border-color var(--animation), box-shadow var(--animation);
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__item:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+}
