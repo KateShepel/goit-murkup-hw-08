@@ -1,6 +1,8 @@
 .nav {
-  // display: flex;
-  // align-items: center;
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    // align-items: center;
+  }
 
   &__list {
     margin-left: 40px;
@@ -12,17 +14,33 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+
+      font-size: 14px;
+      margin-left: 88px;
+    }
   }
 
   &__item {
-    // margin-right: 50px;
-    margin-bottom: 32px;
     display: block;
     // padding-top: 32px;
 
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;
+      // margin-bottom: 28px;
+    }
+
     &:last-child {
-      // margin-right: 0;
       margin-bottom: 0;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 0;
+        // margin-bottom: 28px;
+      }
     }
   }
 
@@ -39,6 +57,10 @@
     .nav__item:hover & {
       color: var(--accent-color);
       transition: color var(--animation);
+    }
+
+    @media screen and (min-width: 768px) {
+      // margin-bottom: 28px;
     }
   }
 }

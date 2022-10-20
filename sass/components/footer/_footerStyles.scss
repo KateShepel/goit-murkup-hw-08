@@ -1,9 +1,12 @@
 .footer {
   background-color: var(--bg-dark-color);
 
-  // & .container {
-  //   // display: flex;
-  // }
+  & .container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 
   &__logo {
     color: var(--primary-white-color);
@@ -20,6 +23,10 @@
     padding-bottom: 20px;
     // padding-left: 72px;
     outline: 1px solid red;
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
   }
 
   &__titel {
@@ -28,5 +35,9 @@
     text-align: center;
     margin-bottom: 20px;
     padding-top: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
   }
 }

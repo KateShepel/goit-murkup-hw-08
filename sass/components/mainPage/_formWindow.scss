@@ -1,10 +1,15 @@
 .form {
   position: relative;
-  width: 528px;
+  width: 450px;
   outline: 1px solid tomato;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
+
+  @media screen and (min-width: 768px) {
+    // overflow-x: hidden;
+    // height: 100vh;
+  }
 
   &__field {
     outline: 1px solid blue;

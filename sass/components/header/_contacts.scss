@@ -1,5 +1,4 @@
 .contacts {
-  // margin-left: auto;
   margin-left: 40px;
 
   font-weight: 500;
@@ -11,13 +10,23 @@
   flex-direction: column-reverse;
   align-items: flex-start;
 
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    flex-direction: column;
+  }
+
   &__item {
     // margin-right: 30px;
     display: flex;
+    justify-content: center;
     align-items: center;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
   }
 
@@ -49,9 +58,10 @@
 
   @media screen and (min-width: 768px) {
     &__icon {
-      display: block;
+      display: inline-block;
       margin-right: 10px;
       fill: var(--primary-text-color);
+      background-position: center;
 
       .contacts__item:hover &,
       .contacts__item:focus & {

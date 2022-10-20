@@ -5,11 +5,20 @@
   display: flex;
   flex-direction: column;
 
+  @media screen and (min-width: 768px) {
+    flex-shrink: 2;
+    width: 50%;
+  }
+
   &__address {
     color: var(--primary-white-color);
     font-style: normal;
     display: inline-block;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   &__link {
@@ -17,5 +26,9 @@
     text-decoration: none;
     display: block;
     margin-top: 8px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
   }
 }
