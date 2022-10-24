@@ -6,6 +6,11 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+    @media screen and (min-width: 1600px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -27,6 +32,11 @@
     @media screen and (min-width: 768px) {
       width: 50%;
     }
+
+    @media screen and (min-width: 1600px) {
+      width: auto;
+      // padding-top: 72px;
+    }
   }
 
   &__titel {
@@ -38,6 +48,10 @@
 
     @media screen and (min-width: 768px) {
       font-size: 14px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      text-align: start;
     }
   }
 }

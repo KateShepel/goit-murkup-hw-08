@@ -8,6 +8,10 @@
     gap: 30px;
   }
 
+  @media screen and (min-width: 1600px) {
+    flex-wrap: nowrap;
+  }
+
   &__list {
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);
@@ -25,6 +29,10 @@
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
+
+    @media screen and (min-width: 1600px) {
+      text-align: start;
+    }
   }
 
   &__text {
@@ -42,13 +50,6 @@
     background-position: center;
     background-color: var(--bg-light-color);
     border-radius: 4px;
-    // margin-bottom: 30px;
-
-    @media screen and (min-width: 768px) {
-      // flex-basis: 50%;
-      // width: calc((100% - 2 * 15px) / 2);
-      // margin: 15px;
-    }
   }
 }
 

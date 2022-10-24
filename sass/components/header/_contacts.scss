@@ -15,8 +15,12 @@
     flex-direction: column;
   }
 
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    flex-direction: row;
+  }
+
   &__item {
-    // margin-right: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +31,14 @@
 
     &:not(:last-child) {
       margin-bottom: 10px;
+
+      @media screen and (min-width: 1600px) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 1600px) {
+      margin-right: 30px;
     }
   }
 

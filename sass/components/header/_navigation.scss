@@ -23,6 +23,11 @@
       font-size: 14px;
       margin-left: 88px;
     }
+
+    @media screen and (min-width: 1600px) {
+      justify-content: start;
+      margin-left: 93px;
+    }
   }
 
   &__item {
