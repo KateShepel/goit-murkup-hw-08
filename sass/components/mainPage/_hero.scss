@@ -3,16 +3,41 @@
   letter-spacing: 0.06em;
   text-align: center;
 
-  /* max-width: 1600px; */
-  // height: 400px;
+  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //   url(../images/bcgpicturenew.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bcgpicturenew.jpg);
+    url(../images/Headerimg.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   outline: 2px solid tomato;
+
+  @media (min-device-pixel-retio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Headerimg@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/HeaderimgTablet.jpg);
+
+    @media (min-device-pixel-retio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/HeaderimgTablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/ImgDesktop.jpg);
+
+    @media (min-device-pixel-retio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/ImgDesktop@2x.jpg);
+    }
+  }
 
   &__title {
     color: var(--primary-white-color);

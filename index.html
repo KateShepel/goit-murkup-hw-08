@@ -164,22 +164,33 @@
           <ul class="works__list">
             <li>
               <div class="thumb">
-                <img src="./images/box1.png" alt="Отображение проекта на планшете" width="370" />
+                <img
+                  srcset="./images/box1-370.jpg 370w, ./images/box1-740.jpg 740w"
+                  src="./images/box1-370.jpg"
+                  alt="Отображение проекта на планшете"
+                  sizes="33vw"
+                />
                 <p class="works__label">Десктопные приложения</p>
               </div>
             </li>
             <li>
               <div class="thumb">
-                <img src="./images/box2.png" alt="Отображение проекта на смартфоне" width="370" />
+                <img
+                  srcset="./images/box2-370.jpg 370w, ./images/box2-740.jpg 740w"
+                  src="./images/box2-370.jpg"
+                  alt="Отображение проекта на смартфоне"
+                  sizes="33vw"
+                />
                 <p class="works__label">Мобильные приложения</p>
               </div>
             </li>
             <li>
               <div class="thumb">
                 <img
-                  src="./images/box3.png"
+                  srcset="./images/box3-370.jpg 370w, ./images/box3-740.jpg 740w"
+                  src="./images/box3-370.jpg"
                   alt="Отображение цветного градиента на планшете"
-                  width="370"
+                  sizes="33vw"
                 />
                 <p class="works__label">Дизайнерские решения</p>
               </div>
@@ -193,7 +204,22 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/teamcard1.jpg" alt="Игорь Демьяненко дизайнер" width="270" />
+              <picture>
+                <source
+                  srcset="./images/teamcard1-450.jpg 1x, ./images/teamcard1-900.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/teamcard1-354.jpg 1x, ./images/teamcard1-708.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1599px)"
+                />
+                <source
+                  srcset="./images/teamcard1-270.jpg 1x, ./images/teamcard1-540.jpg 2x"
+                  media="(min-width: 1600px)"
+                />
+                <img src="./images/teamcard1-270.jpg" alt="Игорь Демьяненко дизайнер" />
+              </picture>
+
               <h3 class="team__full-name">Игорь Демьяненко</h3>
               <p class="team__position" lang="en">Product Designer</p>
               <ul class="webs">
@@ -224,7 +250,22 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/teamcard2.jpg" alt="Ольга Репина разработчик" width="270" />
+              <picture>
+                <source
+                  srcset="./images/teamcard2-450.jpg 1x, ./images/teamcard2-900.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/teamcard2-354.jpg 1x, ./images/teamcard2-708.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1599px)"
+                />
+                <source
+                  srcset="./images/teamcard2-270.jpg 1x, ./images/teamcard2-540.jpg 2x"
+                  media="(min-width: 1600px)"
+                />
+                <img src="./images/teamcard2-270.jpg" alt="Ольга Репина разработчик" />
+              </picture>
+
               <h3 class="team__full-name">Ольга Репина</h3>
               <p class="team__position" lang="en">Frontend Developer</p>
               <ul class="webs">
@@ -255,7 +296,22 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/teamcard3.jpg" alt="Николай Тарасов маркетолог" width="270" />
+              <picture>
+                <source
+                  srcset="./images/teamcard3-450.jpg 1x, ./images/teamcard3-900.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/teamcard3-354.jpg 1x, ./images/teamcard3-708.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1599px)"
+                />
+                <source
+                  srcset="./images/teamcard3-270.jpg 1x, ./images/teamcard3-540.jpg 2x"
+                  media="(min-width: 1600px)"
+                />
+                <img src="./images/teamcard3-270.jpg" alt="Николай Тарасов маркетолог" />
+              </picture>
+
               <h3 class="team__full-name">Николай Тарасов</h3>
               <p class="team__position" lang="en">Marketing</p>
               <ul class="webs">
@@ -286,7 +342,22 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/teamcard4.jpg" alt="Михаил Ермаков дизайнер" width="270" />
+              <picture>
+                <source
+                  srcset="./images/teamcard4-450.jpg 1x, ./images/teamcard4-900.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/teamcard4-354.jpg 1x, ./images/teamcard4-708.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1599px)"
+                />
+                <source
+                  srcset="./images/teamcard4-270.jpg 1x, ./images/teamcard4-540.jpg 2x"
+                  media="(min-width: 1600px)"
+                />
+                <img src="./images/teamcard4-270.jpg" alt="Михаил Ермаков дизайнер" />
+              </picture>
+
               <h3 class="team__full-name">Михаил Ермаков</h3>
               <p class="team__position" lang="en">UI Designer</p>
               <ul class="webs">
