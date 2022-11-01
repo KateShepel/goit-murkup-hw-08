@@ -3,16 +3,12 @@
   letter-spacing: 0.06em;
   text-align: center;
 
-  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //   url(../images/bcgpicturenew.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/Headerimg.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  outline: 2px solid tomato;
 
   @media (min-device-pixel-retio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),

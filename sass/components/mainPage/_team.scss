@@ -1,6 +1,5 @@
 .team {
   background-color: var(--bg-light-color);
-  outline: 2px solid tomato;
 
   &__title {
     color: var(--title-text-color);
@@ -12,8 +11,6 @@
   }
 
   &__list {
-    // justify-content: space-between;
-
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
@@ -74,36 +71,3 @@
     transition: fill var(--animation);
   }
 }
-
-/* .webs .link::before {
-  content: "";
-  display: block;
-
-  outline: 1px solid red;
-  width: 20px;
-  height: 20px;
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-} */
-
-/* .webs .icon-instagram::before {
-  background-image: url(../imagescss/instagram.svg);
-}
-
-.webs .icon-twiter::before {
-  background-image: url(../imagescss/twitter.svg);
-}
-
-.webs .icon-facebook::before {
-  background-image: url(../imagescss/facebook.svg);
-}
-
-.webs .icon-linkedin::before {
-  background-image: url(../imagescss/linkedin.svg);
-}
-
-.webs .link:hover,
-.webs .link:focus {
-  background-color: var(--accent-color);
-} */

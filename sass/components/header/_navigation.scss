@@ -1,9 +1,4 @@
 .nav {
-  @media screen and (min-width: 768px) {
-    // display: flex;
-    // align-items: center;
-  }
-
   &__list {
     margin-left: 40px;
     font-weight: 500;
@@ -32,11 +27,9 @@
 
   &__item {
     display: block;
-    // padding-top: 32px;
 
     @media screen and (min-width: 768px) {
       margin-right: 50px;
-      // margin-bottom: 28px;
     }
 
     &:last-child {
@@ -44,7 +37,6 @@
 
       @media screen and (min-width: 768px) {
         margin-right: 0;
-        // margin-bottom: 28px;
       }
     }
   }
@@ -63,20 +55,5 @@
       color: var(--accent-color);
       transition: color var(--animation);
     }
-
-    @media screen and (min-width: 768px) {
-      // margin-bottom: 28px;
-    }
   }
 }
-
-/* Или два кортких варианта для очистки крайних марджинов последних елементов
-Делается обязательно!!! */
-
-/* .nav__item:not(:last-child) {
-  margin-right: 50px;
-} */
-
-/* .nav__item + .item {
-  margin-left: 50px;
-} */

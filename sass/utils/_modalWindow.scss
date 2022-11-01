@@ -6,11 +6,10 @@
 
   width: 450px;
   max-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media screen and (min-width: 1600px) {
     width: 528px;
-    // height: 581px;
   }
 
   background-color: var(--primary-white-color);

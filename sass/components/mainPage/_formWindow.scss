@@ -1,18 +1,11 @@
 .form {
   position: relative;
   width: 450px;
-  outline: 1px solid tomato;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
 
-  @media screen and (min-width: 768px) {
-    // overflow-x: hidden;
-    // height: 100vh;
-  }
-
   &__field {
-    outline: 1px solid blue;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -67,8 +60,3 @@
 .form__comment:focus {
   border-color: var(--accent-color);
 }
-
-/* Второй вариант для смены цвета иконки */
-/* .thumb-form:focus-within > .icon-form {
-  fill: var(--accent-color);
-} */
